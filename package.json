@@ -1,0 +1,42 @@
+{
+  "name": "proposal-studio-spreadsheet-demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Demo proposal-planning portal that embeds Apryse Spreadsheet Editor (WebViewer) in a React + Vite + TypeScript app to open, edit and save XLSX files entirely in the browser.",
+  "keywords": [
+    "apryse",
+    "webviewer",
+    "spreadsheet-editor",
+    "xlsx",
+    "excel",
+    "react",
+    "vite",
+    "typescript",
+    "client-side",
+    "spreadsheet",
+    "excel-in-browser"
+  ],
+  "type": "module",
+  "scripts": {
+    "postinstall": "node scripts/copy-webviewer-assets.mjs",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@pdftron/webviewer": "12.2.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^5.2.0",
+    "typescript": "^5.6.3",
+    "vite": "^7.3.7"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}

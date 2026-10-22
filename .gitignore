@@ -1,0 +1,7 @@
+node_modules
+dist
+.env
+.env.local
+# Copied from node_modules on install (see scripts/copy-webviewer-assets.mjs)
+public/lib
+.DS_Store
